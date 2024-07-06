@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      name: discovery-service
+      uri: ${CONFIG_SERVICE}
+      fail-fast: true
+      retry:
+        max-attempts: 10
+        max-interval: 2000
